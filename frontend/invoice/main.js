@@ -1,6 +1,6 @@
 "use strict";
 
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "https://be-repair-motorbike-production.up.railway.app";
 const TOKEN_KEY = "jwt_storage_key";
 const invoiceId = new URLSearchParams(window.location.search).get("invoiceId");
 
