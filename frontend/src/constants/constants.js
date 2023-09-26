@@ -1,3 +1,3 @@
 export const API = {
-  BASE_URL: "http://localhost:8080",
+  BASE_URL: "https://be-repair-motorbike-production.up.railway.app",
 };

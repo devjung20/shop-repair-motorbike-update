@@ -40,7 +40,7 @@ const FormImage = ({ imageUrl, setImageUrl }) => {
     if (token) config.headers.Authorization = "Bearer " + token;
     fmData.append("file", file);
     axios
-      .post("http://localhost:8080/api/products/upload", fmData, config)
+      .post("https://be-repair-motorbike-production.up.railway.app/api/products/upload", fmData, config)
       .then((res) => {
         setImageUrl(res?.data?.data?.url);
         setLoading(false);
@@ -55,7 +55,7 @@ const FormImage = ({ imageUrl, setImageUrl }) => {
 
   return (
     <Upload
-      action="https://localhost:8080/api/products/upload"
+      action="https://be-repair-motorbike-production.up.railway.app/api/products/upload"
       accept="image/png, image/jpeg"
       listType="picture-card"
       showUploadList={false}
